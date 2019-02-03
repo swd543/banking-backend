@@ -23,3 +23,9 @@
 /nbdist/
 /.nb-gradle/
 /build/
+
+### Docker compose ###
+.attach_pid*
+
+### DBeaver cache ###
+.dbeaver*
