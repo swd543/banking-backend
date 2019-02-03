@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  database:
+    image: postgres:alpine
+    restart: always
+    ports: 
+      - 5432:5432
+    environment:
+      POSTGRES_DB: buga-banking
+      POSTGRES_USER: buga
+      POSTGRES_PASSWORD: SSGrocks@123
+    volumes:
+      - ./init-scripts:/docker-entrypoint-initdb.d:ro
